@@ -1,4 +1,4 @@
-```markdown
+
 # API de Gerenciamento de Usuários
 
 Esta é uma API web construída com Node.js, Express e PostgreSQL para gerenciar usuários. A API permite a criação, leitura, atualização e exclusão (CRUD) de usuários em um banco de dados PostgreSQL.
