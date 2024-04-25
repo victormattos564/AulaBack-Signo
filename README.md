@@ -1,3 +1,4 @@
+```markdown
 # API de Gerenciamento de Usuários
 
 Esta é uma API web construída com Node.js, Express e PostgreSQL para gerenciar usuários. A API permite a criação, leitura, atualização e exclusão (CRUD) de usuários em um banco de dados PostgreSQL.
@@ -8,11 +9,11 @@ Certifique-se de ter o Node.js e o PostgreSQL instalados em sua máquina.
 
 Instale as dependências do projeto:
 
-bash
+```bash
 npm init -y
 npm install express pg
 npm install -g nodemon
-
+```
 
 ## Criando o Banco de Dados
 
@@ -26,52 +27,51 @@ Os dados de acesso ao banco de dados estão expostos neste projeto, pois é dest
 
 ## Endpoints
 
-- *POST /usuarios:* Adiciona um novo usuário.
+- **POST /usuarios:** Adiciona um novo usuário.
 
   - Corpo da requisição: 
-    json
+    ```json
     {
       "nome": "Nome do Usuário",
       "email": "email@exemplo.com"
     }
-    
+    ```
 
-- *GET /usuarios:* Retorna todos os usuários.
+- **GET /usuarios:** Retorna todos os usuários.
 
   - Resposta: 
-    json
+    ```json
     {
       "total": 3,
       "usuarios": [...]
     }
-    
+    ```
 
-- *PUT /usuarios/:id:* Atualiza um usuário existente.
+- **GET /usuarios/:id:** Retorna um usuário específico.
 
-  - Parâmetros da URL: id do usuário.
+- **PUT /usuarios/:id:** Atualiza um usuário existente.
+
   - Corpo da requisição: 
-    json
+    ```json
     {
       "nome": "Novo Nome",
       "email": "novoemail@exemplo.com"
     }
-    
+    ```
 
-- *DELETE /usuarios/:id:* Exclui um usuário existente.
-
-  - Parâmetros da URL: id do usuário.
+- **DELETE /usuarios/:id:** Exclui um usuário existente.
 
 ## Execução
 
 Para iniciar o servidor, execute: 
 
-bash
+```bash
 node nome-do-arquivo.js
-
+```
 
 O servidor será iniciado na porta especificada.
 
-Certifique-se de substituir nome-do-arquivo.js pelo nome do arquivo onde o código está localizado.
+Certifique-se de substituir `nome-do-arquivo.js` pelo nome do arquivo onde o código está localizado.
 
 ## Testando as Rotas com Insomnia
 
@@ -85,13 +85,9 @@ Você pode usar o Insomnia para testar as rotas da API de Gerenciamento de Usuá
 ### Adicionando as Requisições
 
 1. Abra o Insomnia e crie uma nova Pasta para o projeto.
-2. Adicione as requisições para cada rota da API:
-   - *POST /usuarios:* Adicione uma requisição do tipo POST para criar um novo usuário. Configure o corpo da requisição com o JSON contendo os dados do usuário.
-   - *GET /usuarios:* Adicione uma requisição do tipo GET para obter todos os usuários.
-   - *GET /usuarios/:id:* Adicione uma requisição do tipo GET para obter um usuário específico. Substitua :id pelo ID do usuário desejado.
-   - *PUT /usuarios/:id:* Adicione uma requisição do tipo PUT para atualizar um usuário existente. Substitua :id pelo ID do usuário que deseja atualizar e configure o corpo da requisição com os novos dados do usuário.
-   - *DELETE /usuarios/:id:* Adicione uma requisição do tipo DELETE para excluir um usuário existente. Substitua :id pelo ID do usuário que deseja excluir.
+2. Adicione as requisições para cada rota da API.
 
 ### Testando as Requisições
 
 Com as requisições adicionadas, você pode testá-las clicando no botão "Send" ao lado de cada requisição. Após enviar a requisição, o Insomnia exibirá a resposta do servidor, permitindo que você visualize o resultado da operação.
+```
