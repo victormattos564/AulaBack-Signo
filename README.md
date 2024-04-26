@@ -1,6 +1,4 @@
 
----
-
 # Bem-vindo à API de Gerenciamento de Usuários!
 
 Olá! Seja bem-vindo à nossa API de gerenciamento de usuários. Aqui, você poderá criar, visualizar, atualizar e excluir informações de usuários de forma fácil e rápida. Vamos dar uma olhada em como começar?
@@ -96,4 +94,3 @@ Quer testar nossa API? O Insomnia é uma ferramenta incrível para isso!
 Agora é só clicar em "Send" ao lado de cada requisição para testar. O Insomnia mostrará a resposta do servidor, permitindo que você veja o resultado das suas operações.
 
 ---
-
